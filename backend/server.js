@@ -7,8 +7,7 @@ import commentRoute from "./routes/comment.route.js"
 import cookieParser from 'cookie-parser';
 import cors from 'cors'
 import path from "path"
-//dotenv.config({ path: "./backend/.env" }); // ✅ Important if .env is inside /backend
-//dotenv.config({ path: "./.env" });
+
 
 dotenv.config()
 const app = express()
@@ -20,10 +19,6 @@ const PORT = process.env.PORT || 3000
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({extended:true}));
-// app.use(cors({
-//     origin: "https://mern-blog-ha28.onrender.com",
-//     credentials:true
-// }))
 
 
 
