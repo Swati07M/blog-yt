@@ -29,8 +29,8 @@ app.use(express.urlencoded({extended:true}));
 
 app.use(cors({
     origin: [
-        "http://localhost:5173",          // ✅ for local React dev
-       "https://mern-blog-ha28.onrender.com" // ✅ for deployed frontend
+        //"http://localhost:5173",          // ✅ for local React dev
+    "https://blog-yt-5tkt.onrender.com" // ✅ for deployed frontend
     ],
     credentials: true,
 }));

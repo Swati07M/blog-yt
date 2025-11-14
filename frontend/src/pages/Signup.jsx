@@ -33,14 +33,14 @@ toast.dismiss(); // clear previous toasts
         console.log(user)
 
         try {
-            const response = await axios.post(`https://mern-blog-ha28.onrender.com/api/v1/user/register`, user, {
+            const response = await axios.post(`https://blog-yt-5tkt.onrender.com/user/register`, user, {
                 headers: {
                     "Content-Type": "application/json",
                 },
                 withCredentials: true,
             });
 //             const response = await axios.post(
-//   "https://mern-blog-ha28.onrender.com/api/v1/user/register",
+//   "https://blog-yt-5tkt.onrender.com/user/register",
 //   JSON.stringify(user),
 //   {
 //     headers: { "Content-Type": "application/json" },
