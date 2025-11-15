@@ -42,7 +42,7 @@ const BlogView = () => {
                 setBlogLike(updatedLikes);
                 setLiked(!liked)
 
-                //apne blog ko update krunga
+                // blog update 
                 const updatedBlogData = blog.map(p =>
                     p._id === selectedBlog._id ? {
                         ...p,

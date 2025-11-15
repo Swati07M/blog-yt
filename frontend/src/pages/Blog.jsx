@@ -10,8 +10,8 @@ export const blogJson = [
     {
         "id": 1,
         "title": "The Ultimate Guide to Digital Marketing in 2025",
-        "author": "Rohit Singh",
-        "date": "2025-03-27",
+        "author": "Swati Mahajan",
+        "date": "2025-11-12",
         "content": "Digital marketing is constantly evolving. In 2025, businesses must focus on AI-driven strategies, voice search optimization, and hyper-personalization. This guide covers the latest trends and strategies for success.",
         "tags": ["digital marketing", "SEO", "social media", "PPC"],
         "category": "Marketing",
@@ -20,8 +20,8 @@ export const blogJson = [
     {
         "id": 2,
         "title": "Building a Full-Stack LMS with MERN Stack",
-        "author": "Rohit Singh",
-        "date": "2025-03-27",
+        "author": "Swati Mahajan",
+        "date": "2025-11-14",
         "content": "A step-by-step guide to building a Learning Management System (LMS) using React, Tailwind CSS, Node.js, Express.js, and MongoDB. Learn how to create courses, manage users, and process payments.",
         "tags": ["MERN stack", "LMS", "React", "Node.js"],
         "category": "Web Development",
@@ -66,7 +66,7 @@ const Blog = () => {
     const { blog } = useSelector(store => store.blog)
 
     useEffect(() => {
-        const getAllPublsihedBlogs = async () => {
+        const getAllPublishedBlogs = async () => {
             try {
                 const res = await axios.get(`https://blog-yt-5tkt.onrender.com/api/v1/blog/get-published-blogs`, { withCredentials: true })
                 if (res.data.success) {
@@ -77,7 +77,7 @@ const Blog = () => {
 
             }
         }
-        getAllPublsihedBlogs()
+        getAllPublishedBlogs()
     },[])
 
     return (

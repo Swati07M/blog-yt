@@ -40,7 +40,7 @@ const RecentBlog = () => {
     console.log(blog);
 
     useEffect(() => {
-        const getAllPublsihedBlogs = async () => {
+        const getAllPublishedBlogs = async () => {
             try {
                 const res = await axios.get(`https://blog-yt-5tkt.onrender.com/api/v1/blog/get-published-blogs`, { withCredentials: true })
                 if (res.data.success) {
@@ -51,7 +51,7 @@ const RecentBlog = () => {
 
             }
         }
-        getAllPublsihedBlogs()
+        getAllPublishedBlogs()
     }, [])
 
     return (
