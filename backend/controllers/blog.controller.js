@@ -61,17 +61,24 @@ export const updateBlog = async (req, res) => {
 
 export const getAllBlogs = async (_, res) => {
     try {
-        const blogs = await Blog.find().sort({ createdAt: -1 }).populate({
-            path: 'author',
-            select: 'firstName lastName photoUrl'
-        }).populate({
-            path: 'comments',
-            sort: { createdAt: -1 },
-            populate: {
-                path: 'userId',
-                select: 'firstName lastName photoUrl'
-            }
-        });
+        // const blogs = await Blog.find().sort({ createdAt: -1 }).populate({
+        //     path: 'author',
+        //     select: 'firstName lastName photoUrl'
+        // }).populate({
+        //     path: 'comments',
+        //     sort: { createdAt: -1 },
+        //     populate: {
+        //         path: 'userId',
+        //         select: 'firstName lastName photoUrl'
+        //     }
+        // });
+        const blogs = await Blog.find({ author: { $ne: null } })
+        .sort({ createdAt: -1 })
+        .populate({
+        path: "author",
+        select: "firstName lastName photoUrl"
+    })
+
         res.status(200).json({ success: true, blogs });
     } catch (error) {
         res.status(500).json({ success: false, message: "Error fetching blogs", error: error.message });
@@ -80,14 +87,16 @@ export const getAllBlogs = async (_, res) => {
 
 export const getPublishedBlog = async (_,res) => {
     try {
-        const blogs = await Blog.find({isPublished:true}).sort({ createdAt: -1 }).populate({path:"author", select:"firstName lastName photoUrl"}).populate({
-            path: 'comments',
-            sort: { createdAt: -1 },
-            populate: {
-                path: 'userId',
-                select: 'firstName lastName photoUrl'
-            }
-        });
+        // const blogs = await Blog.find({isPublished:true}).sort({ createdAt: -1 }).populate({path:"author", select:"firstName lastName photoUrl"}).populate({
+        //     path: 'comments',
+        //     sort: { createdAt: -1 },
+        //     populate: {
+        //         path: 'userId',
+        //         select: 'firstName lastName photoUrl'
+        //     }
+        // });
+        const blogs = await Blog.find({ isPublished: true, author: { $ne: null } })
+
         if(!blogs){
             return res.status(404).json({
                 message:"Blog not found"
