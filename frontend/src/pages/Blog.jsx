@@ -30,8 +30,8 @@ export const blogJson = [
     {
         "id": 3,
         "title": "Top 10 WordPress Plugins for 2025",
-        "author": "Rohit Singh",
-        "date": "2025-03-27",
+        "author": "Swati Mahajan",
+        "date": "2025-11-12",
         "content": "WordPress remains the most popular CMS. This article covers the top 10 must-have plugins for security, SEO, performance, and customization in 2025.",
         "tags": ["WordPress", "plugins", "SEO", "website optimization"],
         "category": "WordPress",
@@ -40,8 +40,8 @@ export const blogJson = [
     {
         "id": 4,
         "title": "How to Use APIs in Web Development",
-        "author": "Rohit Singh",
-        "date": "2025-03-27",
+        "author": "Swati Mahajan",
+        "date": "2025-11-14",
         "content": "APIs play a crucial role in modern web development. Learn how to integrate third-party APIs, create RESTful APIs with Node.js, and use authentication methods like OAuth.",
         "tags": ["APIs", "web development", "Node.js", "RESTful API"],
         "category": "Web Development",
@@ -50,8 +50,8 @@ export const blogJson = [
     {
         "id": 5,
         "title": "Search Engine Optimization: The Complete Beginner’s Guide",
-        "author": "Rohit Singh",
-        "date": "2025-03-27",
+        "author": "Swati Mahajan",
+        "date": "2025-11-14",
         "content": "SEO is vital for ranking higher on Google. This guide explains keyword research, on-page and off-page SEO, technical SEO, and the latest trends.",
         "tags": ["SEO", "Google ranking", "keyword research", "backlinks"],
         "category": "Marketing",
