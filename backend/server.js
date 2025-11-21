@@ -42,10 +42,7 @@ const _dirname = path.resolve()
     res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"))
  });
 
-// app.listen(PORT, ()=>{
-//     console.log(`Server listen at port ${PORT}`);
-//     connectDB()
-// })
+
 connectDB();
 
 app.listen(process.env.PORT || 3000, () => {
