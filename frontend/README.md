@@ -22,6 +22,7 @@ The platform includes a rich text editor, authentication, likes, comments, profi
     - Responsive UI built with React & Tailwind CSS
 
 # 🧰 Tech Stack & Tools
+
 ## 🎨 Frontend
 
     React.js
@@ -60,6 +61,7 @@ The platform includes a rich text editor, authentication, likes, comments, profi
     MONGO_URI=your_mongo_connection_string
     Run backend:
     npm start/npm run dev
+    
     💻 Frontend Setup
 
     cd frontend
