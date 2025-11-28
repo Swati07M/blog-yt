@@ -1,16 +1,71 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 Blogging Platform – MERN Application
 
-Currently, two official plugins are available:
+A full-stack Blogging Platform where users can create, edit, delete, and view blogs.
+The platform includes a rich text editor, authentication, likes, comments, profile management, and an admin dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+# 🚀 Key Features (Short & Clear)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    - JWT Authentication for secure login & signup
 
-## Expanding the ESLint configuration
+    - Create, Edit & Delete Blogs using a rich text editor
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    - Likes & Comments system for user interaction
+
+    - Search & Category Filtering for easy navigation
+
+    - User Profile with list of authored blogs
+
+    - Cloudinary Image Uploads for blog thumbnails
+
+    - Responsive UI built with React & Tailwind CSS
+
+# 🧰 Tech Stack & Tools
+## 🎨 Frontend
+
+    React.js
+
+    Redux
+
+    Tailwind CSS
+
+    React-Quill
+
+## ⚙️ Backend
+
+    Node.js
+
+    Express.js
+
+    MongoDB (Mongoose)
+
+## 🧪 Tools / Services
+
+    GitHub
+
+    Cloudinary (image uploads)
+
+    Postman (API testing)
+
+   ## 🧑‍💻 Getting Started
+
+    🔧 Backend Setup
+    cd backend
+    npm install
+    Create a .env file
+
+    env
+    PORT=8000
+    MONGO_URI=your_mongo_connection_string
+    Run backend:
+    npm start/npm run dev
+    💻 Frontend Setup
+
+    cd frontend
+    npm install
+    npm start/npm run dev
+    The React app will run at:
+    http://localhost:5173
+
+ 
