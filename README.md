@@ -43,8 +43,6 @@ The platform includes a rich text editor, authentication, likes, comments, profi
 
 ## 🧪 Tools / Services
 
-    GitHub
-
     Cloudinary (image uploads)
 
     Postman (API testing)
